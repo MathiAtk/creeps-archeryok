@@ -18,6 +18,17 @@ h1{
     color: rgb(133, 255, 2);
     font-family: 'Exo', sans-serif;
     text-shadow: rgb(18, 14, 220) -5px -5px 6px;
+    animation: efecto1;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in;
+    animation-duration: 25s;
+    animation-delay: 1s;
+}
+
+@keyframes efecto1 {
+    0% {transform: translateX(0px)}
+    50% {transform: translateX(450px)}
+    100% {transform: translateX(0px)}
 }
 
 .font{
