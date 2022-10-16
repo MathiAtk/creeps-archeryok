@@ -8,7 +8,14 @@ body{
     background-size: cover;
 }
 
-@media (max-width: 415px){
+.row-home{display: none;}
+
+@media screen and (max-width: 415px){
+    .row-home{
+        display: flex;
+        flex-direction: row;
+        background-color: red;
+    }
     
 } 
 .fixed{
@@ -21,6 +28,10 @@ body{
 
 .box-shadow{
     box-shadow: white 0px 0px 15px;
+}
+
+.red-shadow{
+    box-shadow: red 0px 0px 20px;
 }
 h1{
     color: rgb(133, 255, 2);
