@@ -7,12 +7,20 @@ body{
     background-image: url(../images/backgroundsteel.jpg);
     background-size: cover;
 }
+
+@media (max-width: 415px){
+    
+} 
 .fixed{
     position: fixed;
     z-index: 4;
 }
 .big-margin{
     margin-left: 350px;
+}
+
+.box-shadow{
+    box-shadow: white 0px 0px 15px;
 }
 h1{
     color: rgb(133, 255, 2);

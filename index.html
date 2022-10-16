@@ -21,7 +21,7 @@
                 <img id="logo" class="borderh1  animate__animated animate__backInDown" src="./images/apple-touch-icon.png" alt="Logo">
             </div>
             <div class="col-9 bg-black mx-2 my-4 borderh1 p-4 titleflex">
-                <h1>CREEPS ARCHERY</h1>
+                <h1 class="h1">CREEPS ARCHERY</h1>
                 <fieldset>
                     <legend>Opciones</legend>
                     <select name="Menu Desplegable">
@@ -31,51 +31,60 @@
                         <option value="3">Opcion 3</option>
             
                     </select>
-        
                 </fieldset>
             </div>
             <div class="col m-3 text-center p-2">
                 <a href="https://www.youtube.com/"><img src="./images/youtube.png" class="youtube" alt="YouTube"></a>
                 <a href="https://www.instagram.com/creepsarchery/tagged/"><img src="./images/Instagram-Icon.png" class="insta" alt="Instagram"></a>
             </div>
+
         <div class="row">
-            <div class="col m-0 text-center">
+            <div class="col text-center">
                 <a class="a1" href="https://eastonarchery.com/">Easton Archer</a>
             </div>
-            <div class="col m-0 text-center">
+            <div class="col text-center">
                 <a class="a1" href="https://www.victoryarchery.com/">Victory Archery</a>
             </div>
-            <div class="col m-0 text-center">
+            <div class="col text-center">
                 <a class="a1" href="https://www.goldtip.com/">Goldtip</a>
             </div>
-        </div>    
-    </header>
-
-    <nav class="container mt-4 bg-dark borderh1 p-3 navbarhome font">
+        </div>  
+        
         <div class="row">
-            <div class="col-3 fixed">
+            <nav class="col mt-4 bg-dark border border-secondary border-4 rounded-4 p-3 navbarhome font">
                 <form class="d-flex mt-3 animate__animated animate__backInLeft" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-            </div>
-            <div class="col-9">
-                <nav class="navbar navbar-expand-lg bg-dark justify-content-center big-margin">
-                    <div class="nav">
-                        <a class="nav-link active mx-4" aria-current="page" href="#">Home</a>
-                        <a class="nav-link mx-4" href="./products.html">Products</a>
-                        <a class="nav-link mx-4" href="./aboutus.html">About Us</a>
-                        <a class="nav-link mx-4" href="./media.html">Media</a>
-                    </div>
-                </nav>
-            </div>
+                  
+                <ul class="nav justify-content-center border-2 m-4 border-top border-bottom border-danger">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>    
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <section class="container">
         <div class="row">
             <div class="col text-center p-2 mt-2">
                 <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, esse dolore consectetur praesentium perspiciatis, quaerat iusto sapiente ducimus non ipsam eaque adipisci, neque harum placeat architecto accusantium vitae quibusdam aliquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet fuga voluptas quaerat eveniet, eum vel, dolores aspernatur similique nisi suscipit qui deserunt ducimus autem, eos dolorum dolor iusto commodi facere?</p>
             </div>
         </div>
-    </nav>
+    </section>
 
     <section class="container">
         <div class="row">
@@ -124,30 +133,32 @@
 
     <section class="container borderh1 bg-dark p-4 mt-4 font">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 ratio ratio-16x9">
                 <iframe class="video" width="400" height="500" src="https://www.youtube.com/embed/HiQG9Jbqr0E" title="New to Archery? | 5 Simple Tips for a Successful First Day of Shooting Archery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-4 mt-5">
-                <form action="#" class="form1">
-
-                    <p>INGRESA TUS DATOS</p>
-                    <p>Nombre y Apellido</p><input type="text"placeholder="Ingrese su nombre">
-                    <p>Email</p><input type="text"placeholder="Ingrese su email">
-            
-                    <p>Dejanos tu comentario</p>
-                    <textarea cols="35" rows="3"></textarea>
-                    <br>
-                    <input type="submit">
-                    <input type="reset">  
+            <div class="col-4 mt-5 box-shadow border border-2 rounded-2 p-3 font white">
+                <label class=" m-3 p-1 border-top border-bottom"><b>Sign In</b></label>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+
             </div>
             <div class="col-4">
                 <div class="col my-4">
-                    <ul class="aside1">
-                        <li><b>Lorem,</b> sdasasdas ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum cupiditate officiis maxime, vero praesentium ex natus iste, distinctio nam sed! Ad aut esse soluta officia eveniet? Placeat, dolorum ab?</li>
-                        <li><b>Lorem,</b> sdasdasas ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum cupiditate officiis maxime, vero praesentium ex natus iste, distinctio nam sed! Ad aut esse soluta officia eveniet? Placeat, dolorum ab?</li>
-                        <li><b>Lorem,</b> asdasdas ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum cupiditate officiis maxime, vero praesentium ex natus iste, distinctio nam sed! Ad aut esse soluta officia eveniet? Placeat, dolorum ab?</li>
-                    </ul>
+                    
                 </div>
             </div>
         </div>
