@@ -18,14 +18,12 @@ body{
         margin-top: 10px;
         width: 250px;
     }
-    .resp-width{
-        width: 1000px;
-    }
     .h1{
         animation: none;
     }
-    
-    
+    img#logo{
+        width: 10px;
+    }
 }
 
 
